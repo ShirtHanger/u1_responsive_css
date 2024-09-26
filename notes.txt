@@ -1,0 +1,15 @@
+RESPONSIVE CSS
+
+Mobile first design
+
+Modern, simple form of mobile-friendly design, No JavaScript required
+
+1. Media Queries
+    a. WIDTH matters more than height
+    b. ORDER MATTERS! (Cascading) 
+        * Put media queries at the end! 
+        * Do biggest to smallest for max-width (Desktop first)
+        * Smallest to biggest for min-width (Mobile first)
+2. Breakpoints
+    b. General device widths to follow for responsive design (ex: These phones are always 500px)
+3. CSS Rules

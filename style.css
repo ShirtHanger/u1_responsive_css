@@ -8,6 +8,66 @@ img{
 }
 
 
-#dog2 {
+#dog2 { /* Invisible dog */
     display: none
 }
+
+body {
+    background-color: gray;
+}
+
+/* A media Query */
+/* Alters page if condition is met */
+/* Inside code block */
+/* Width matters more than height tbh */
+
+/* Split sbuttons apart if screen is small enough */
+
+@media screen and (max-width: 800px) { /* Passing in a conditional */
+    /* <-CSS Code goes here -> */
+    body {
+        background-color: aqua;
+   }
+   h1 {
+    color: brown;
+    letter-spacing: 10px;
+   }
+   button {
+    border-radius: 25%;
+    padding: 1rem;
+   }
+}
+
+@media screen and (max-width: 650px) { /* When screen is this small, it will still INHERIT above conditions if met, cascading */
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    body {
+        background-color: darkgoldenrod;
+   }
+   h1 {
+    color: darkmagenta;
+    letter-spacing: 10px;
+   }
+   img {
+    width: 60%
+   }
+}
+
+@media screen and (max-width: 450px) { /* Sets buttons to vertical for even SMALLER devices... and new dog */
+    #navbar {
+        flex-direction: column;
+    }
+    #dog1 {
+        display: none;
+    }
+    #dog2 {
+        display: block;
+    }
+}
+
+/* ORDER MATTERS */
+
+/* If using max width, do biggest to smallest (Desktop first) */
+/* If using min width, do smallest to biggest (Mobile first) */
